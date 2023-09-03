@@ -1,0 +1,64 @@
+body {
+    background-color: #aacbf2;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+input {
+    width: 90%;
+    padding: 12px 5%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.login-container::before {
+    content: "🔐";
+    font-size: 36px;
+}
+
+.login-container::after {
+    content: "Secure Login";
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888;
+}

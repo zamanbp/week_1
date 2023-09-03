@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../CSS_files/my_gallery.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+  <title>Image Gallery</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <p>MyPage</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="me.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kozhikode.html">Kozhikode</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kgptc.html">KGPTC</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="techfriar.html">TechFriar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h2 class="text-center mb-4">Welcome to My Image Gallery</h2></header><br>
+  <div class="container mt-5 text-center">
+    <p class="lead">Join me on a visual journey as I share moments, places, and emotions captured in frames.</p>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="../Images/beach.jpg" alt="Image 1">
+        <div class="caption">Kozhikode Beach</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/chembra_1.jpg" alt="Image 2">
+        <div class="caption">Chembra Peak</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/edavanna.jpg" alt="Image 3">
+        <div class="caption">Edavanna View Point</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/kakkadampoyil.jpg" alt="Image 4">
+        <div class="caption">Kakkadampoyil</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/karuvathanpoyil.jpg" alt="Image 5">
+        <div class="caption">Thonikadavu</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/kochi_infopark.jpg" alt="Image 6">
+        <div class="caption">Infopark</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/kurishumala_2.jpg" alt="Image 7">
+        <div class="caption">Kurisumala</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/football_1.jpg" alt="Image 8">
+        <div class="caption">Playing School league</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/ooty.jpg" alt="Image 9">
+        <div class="caption">Ooty</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/kurishumala_4.jpg" alt="Image 10">
+        <div class="caption">Nayadampoyil</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/ooty_2.jpg" alt="Image 11">
+        <div class="caption">Ooty</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/vythiry.jpg" alt="Image 12">
+        <div class="caption">Vythiry</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/ooty_3.jpg" alt="Image 13">
+        <div class="caption">Ooty</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/punnakkal.jpg" alt="Image 14">
+        <div class="caption">Punnakkal</div>
+      </div>
+      <div class="gallery-item">
+        <img src="../Images/wayanad.jpg" alt="Image 15"><br><br><br>
+        <div class="caption">Wayanad</div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="feedback-form">
+          <h2 class="text-center">Feedback Form</h2>
+          <form id="feedbackForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" name="name" >
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          </form>
+          <p class="message" id="submissionMessage"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../JS_files/my_gallery.js"></script>
+  <br>
+  <div class="footer">
+    <div class="social-icons">
+        <a href="https://www.instagram.com/zaman.ali._/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/muhammed.zaman.980/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2023 MyPage</p>
+</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.0.3/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</body>
+</html>
+
