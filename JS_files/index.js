@@ -5,7 +5,7 @@ document.getElementById("login-button").addEventListener("click", function() {
 
     if (username === "user" && password === "password") {
         errorMessage.textContent = "";
-        window.location.href = "home.html";
+        window.location.href = "../HTML_files/home.html";
     } else {
         errorMessage.textContent = "Invalid username or password";
     }
